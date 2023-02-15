@@ -10,7 +10,7 @@ import org.apache.tomcat.jdbc.pool.DataSource;
 public class DataSourceUtils {
     public static DataSource getDataSource(){
         DataSource dataSource = new DataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://192.168.0.56:3306/test?characterEncoding=UTF-8");
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
