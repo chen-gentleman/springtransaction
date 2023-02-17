@@ -17,6 +17,14 @@ public class DataSourceUtils {
         dataSource.setInitialSize(5);
         return dataSource;
     }
-
+    public static DataSource getDataSource2(){
+        DataSource dataSource = new DataSource();
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://192.168.0.56:3306/h_test1?characterEncoding=UTF-8");
+        dataSource.setUsername("root");
+        dataSource.setPassword("123456");
+        dataSource.setInitialSize(5);
+        return dataSource;
+    }
 
 }
